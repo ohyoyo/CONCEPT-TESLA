@@ -1,0 +1,32 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+section#welcome {
+    height: 1380px;
+}
+
+section#exterrior {
+    background-color: rgb(98, 100, 125);
+    height: 480px;
+}
+
+section#interrior {
+    background-color: rgb(48, 49, 62);
+    height: 480px;
+}
+
+section#joinsus {
+    background-color: rgb(255, 255, 255);
+    height: 290px;
+}
+
+footer {
+    background-color: rgb(98, 100, 125);
+    height: 120px;
+}
