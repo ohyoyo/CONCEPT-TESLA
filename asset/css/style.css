@@ -1,32 +1,227 @@
+/*
+    type          : css
+    name          : style
+    author        : Yoann Di Maria
+    project       : CONCEPT TESLA
+    demo link     : http://yoanndm.fr/concepttesla/
+    source github : https://github.com/ohyoyo/CONCEPT-TESLA
+*/
 body {
     margin: 0 auto;
     width: 100%;
+    font-family: "Myriad-pro", sans-serif;
 }
-
-section {
-    width: 100%;
-}
-
+/* base section welcome */
 section#welcome {
+    background-color: rgb(98, 100, 125);
     height: 1380px;
 }
-
+/* end base section welcome
+   base section exterrior */
 section#exterrior {
     background-color: rgb(98, 100, 125);
     height: 480px;
 }
-
+/* end base section exterrior
+   base section interrior */
 section#interrior {
     background-color: rgb(48, 49, 62);
     height: 480px;
 }
-
+/* end base section interrior
+   base section joinsus */
 section#joinsus {
     background-color: rgb(255, 255, 255);
     height: 290px;
 }
-
+/* end base section joinsus
+   base footer */
 footer {
     background-color: rgb(98, 100, 125);
     height: 120px;
+}
+/* end footer */
+section#welcome header {
+    position: relative;
+}
+
+section#welcome header #logo {
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    width: 285px;
+    height: 65px;
+    position: absolute;
+    top: 40px;
+    left: 170px;
+}
+
+section#welcome header nav#header {
+    position: absolute;
+    top: 70px;
+    right: 170px;
+    text-align: right;
+}
+section#welcome header nav#header a {
+    font-size: 26px;
+    font-family: "Myriad-pro", sans-serif;
+    color: rgb(173, 173, 173);
+    text-transform: uppercase;
+    line-height: 0.923;
+    text-decoration: none;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+section#welcome header nav#header a:hover {
+    color: rgb(255, 255, 255);
+}
+
+section#welcome #container-screen {
+    width: 560px;
+    top: 167px;
+    right: 354px;
+    position: absolute;
+    font-family: "Myriad-pro", sans-serif;
+    color: rgb(255, 255, 255);
+}
+    
+section#welcome #container-screen h1 {
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 0.462;
+}
+
+section#welcome #container-screen p {
+    font-size: 20px;
+    color: rgb(205, 205, 205);
+    line-height: 1.5;
+}
+
+section#welcome #container-screen a#button {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.8;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px 35px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+section#welcome ol.list {
+    list-style: none;
+    position: absolute;
+    top: 200px;
+    left: 78px;
+    width: 30px;
+}
+
+section#welcome ol.list li {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+section#welcome ol.list li span.inner {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.4;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+section#welcome ol.list li span.inner:hover {
+    border: 2px solid rgb(255, 255, 255);
+    opacity: 1;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+section#welcome .box {
+    top: 740px;
+    position: relative;
+    width: 33.33%;
+    height: 540px;
+    background-color: rgb(35, 36, 46);
+    display: inline-block;
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section#welcome .box:last-child {
+    background-color: rgb(48, 49, 62);
+    left: 0;
+}
+
+section#welcome .box:first-child {
+    right: 0;
+    background-color: rgb(48, 49, 62);
+}
+
+section#welcome .box h1 {
+    font-size: 160px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    line-height: 0.15;
+    
+}
+
+section#welcome .box span {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(205, 205, 205);
+    line-height: 1.2;
+}
+
+#ligne {
+    border-left:8px dotted red;
+    height:60px;
+    border-spacing: 30px;
+}
+
+section#exterrior #container-box {
+    margin: 0 auto;
+    text-align: center;
+    top: 0;
+}
+
+section#exterrior #container-box .box {
+    width: 50%;
+    height: 480px; 
+    float: left;
+}
+
+section#exterrior #container-box .box:last-child {
+    height: 480px;
+    background-image: url("../img/exterrior.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50%;
+    height: 480px;
+    float: left;
+}
+
+section#exterrior .box h1 {
+    font-size: 52px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.462;
+    text-align: center;
+}
+
+section#exterrior .box p { 
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    color: rgb(205, 205, 205);
+    line-height: 1.5;
+    text-align: center;
+    width: 653px;
+    margin: 0 auto;
 }
