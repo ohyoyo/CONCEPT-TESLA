@@ -6,15 +6,36 @@
     demo link     : http://yoanndm.fr/concepttesla/
     source github : https://github.com/ohyoyo/CONCEPT-TESLA
 */
+@font-face {
+    font-family: 'MyriadProReg';
+    src: url('../font/MyriadPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'MyriadProIt';
+    src: url('../font/MyriadPro-It.otf');
+}
+
+@font-face {
+    font-family: 'MyriadProB';
+    src: url('../font/MyriadPro-Bold.otf');
+}
+
 body {
     margin: 0 auto;
     width: 100%;
-    font-family: "Myriad-pro", sans-serif;
+    font-family: 'MyriadProReg', sans-serif;
 }
 /* base section welcome */
 section#welcome {
-    background-color: rgb(98, 100, 125);
+    background: rgb(98, 100, 125);
     height: 1380px;
+    background: linear-gradient(#4b4d61, #62647d); /* W3C */
+    background-image: url("../img/tesla.png");
+    background-position: 0px 100px;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+    background-size: contain, 100%, contain;
 }
 /* end base section welcome
    base section exterrior */
@@ -40,11 +61,13 @@ footer {
     background-color: rgb(98, 100, 125);
     height: 120px;
 }
-/* end footer */
+/* end base footer
+   section welcome 
+*/
 section#welcome header {
     position: relative;
 }
-
+/**/
 section#welcome header #logo {
     background-image: url("../img/logo.png");
     background-repeat: no-repeat;
@@ -63,7 +86,7 @@ section#welcome header nav#header {
 }
 section#welcome header nav#header a {
     font-size: 26px;
-    font-family: "Myriad-pro", sans-serif;
+    font-family: 'MyriadProReg', sans-serif;
     color: rgb(173, 173, 173);
     text-transform: uppercase;
     line-height: 0.923;
@@ -79,9 +102,9 @@ section#welcome header nav#header a:hover {
 section#welcome #container-screen {
     width: 560px;
     top: 167px;
-    right: 354px;
+    right: 260px;
     position: absolute;
-    font-family: "Myriad-pro", sans-serif;
+    font-family: 'MyriadProP', sans-serif;
     color: rgb(255, 255, 255);
 }
     
@@ -89,6 +112,7 @@ section#welcome #container-screen h1 {
     font-size: 52px;
     font-weight: bold;
     line-height: 0.462;
+    padding-bottom: 40px;
 }
 
 section#welcome #container-screen p {
@@ -124,30 +148,29 @@ section#welcome ol.list li {
 }
 
 section#welcome ol.list li span.inner {
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     opacity: 0.4;
-    width: 16px;
-    height: 16px;
     display: inline-block;
 }
 
 section#welcome ol.list li span.inner:hover {
-    border: 2px solid rgb(255, 255, 255);
-    opacity: 1;
-    border-radius: 50%;
     width: 25px;
     height: 25px;
-    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 1;
 }
 
 section#welcome .box {
-    top: 740px;
+    top: 840px;
     position: relative;
     width: 33.33%;
     height: 540px;
     background-color: rgb(35, 36, 46);
-    display: inline-block;
     float: left;
     margin: 0 auto;
     text-align: center;
@@ -162,21 +185,29 @@ section#welcome .box:first-child {
     right: 0;
     background-color: rgb(48, 49, 62);
 }
-
+section#welcome .box .container {
+    text-align: left;
+}
 section#welcome .box h1 {
     font-size: 160px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     color: rgb(255, 255, 255);
-    line-height: 0.15;
+    margin-top: 200px;
+    
+}
+section#welcome .box h2 {
+    font-size: 20px;
+    color: rgb(205, 205, 205);
+    text-transform: uppercase;
+    font-family: myriad-pro, sans-serif;
     
 }
 
 section#welcome .box span {
-    text-transform: uppercase;
-    font-size: 20px;
+    font-size: 50%;
     color: rgb(205, 205, 205);
-    line-height: 1.2;
+    vertical-align: super;
 }
 
 #ligne {
@@ -184,10 +215,11 @@ section#welcome .box span {
     height:60px;
     border-spacing: 30px;
 }
-
+/* end welcome
+   section exterrior 
+*/
 section#exterrior #container-box {
     margin: 0 auto;
-    text-align: center;
     top: 0;
 }
 
@@ -198,30 +230,119 @@ section#exterrior #container-box .box {
 }
 
 section#exterrior #container-box .box:last-child {
-    height: 480px;
     background-image: url("../img/exterrior.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 50%;
-    height: 480px;
     float: left;
 }
 
 section#exterrior .box h1 {
     font-size: 52px;
-    font-family: "Myriad Pro";
     color: rgb(255, 255, 255);
+    font-family: 'MyriadProB', sans-serif;
     font-weight: bold;
-    line-height: 0.462;
-    text-align: center;
+    padding: 105px 105px 35px 190px;
 }
 
 section#exterrior .box p { 
     font-size: 20px;
-    font-family: "Myriad Pro";
+    color: rgb(205, 205, 205);
+    width: 653px;
+    height: 109px;
+    line-height: 1.5;
+    padding-left: 190px;
+    padding-right: 105px;
+    font-family: 'MyriadProReg', sans-serif;
+}
+/* end exterrior
+   section interrior 
+*/
+section#interrior #container-box {
+    top: 0;
+}
+
+section#interrior #container-box .box:first-child {
+    background-image: url("../img/interrior.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+}
+
+section#interrior #container-box .box {
+    width: 50%;
+    height: 480px; 
+    float: left;
+    text-align: left;
+}
+
+section#interrior #container-box .box h1 {
+    font-size: 52px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'MyriadProB', sans-serif;
+    padding: 105px 105px 35px 190px;
+}
+
+section#interrior #container-box .box p { 
+    font-size: 20px;
     color: rgb(205, 205, 205);
     line-height: 1.5;
-    text-align: center;
     width: 653px;
+    height: 109px;
+    padding-left: 190px;
+    padding-right: 105px;
+    font-family: 'MyriadProReg', sans-serif;
+}
+/* end interrior
+   section joinsus 
+*/
+section#joinsus #container-button {
     margin: 0 auto;
+    display: block;
+    text-align: -webkit-center;
+}
+
+section#joinsus #container-button button#joinsus {
+    border-radius: 5px;
+    background-color: rgb(35, 36, 46);
+    width: 520px;
+    height: 90px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.8;
+    align-items: flex-start;
+    text-align: center;
+    margin: 0 auto;
+    top: 80 px;
+    position: relative;
+    text-decoration: none;
+    top: 80px;
+}
+
+section#joinsus #container-button p {
+    font-size: 20px;
+    color: rgb(98, 100, 125);
+    font-style: italic;
+    line-height: 1.5;
+    margin-top: 120px;
+    font-family: 'MyriadProIt', sans-serif;
+    font-style: italic;
+}
+
+/* end joinsus
+   section footer 
+*/
+footer #logo {
+    background-image: url("../img/footer_logo.png");
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    top: 30px;
+    position: relative;
 }
